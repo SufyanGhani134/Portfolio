@@ -7,10 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Build output
 dist
 dist-ssr
-*.local
 
 # Editor directories and files
 .vscode/*
@@ -23,12 +22,19 @@ dist-ssr
 *.sln
 *.sw?
 
+# ESLint configuration
 .eslintrc.cjs
 
-node_modules/*
+# Node.js dependencies
+node_modules/
 
+# Package manager lock files
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
+# Vite configuration
 vite.config.js
 
+# PostCSS configuration
 postcss.config.js
